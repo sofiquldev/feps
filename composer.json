@@ -1,0 +1,27 @@
+{
+    "name": "sofiquldev/front-end-post-submission",
+    "description": "A WordPress plugin for front-end post submission using the Block Editor.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Sofiqul Islam",
+            "email": "sofiquldev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "wp-cli/wp-cli-bundle": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FEPS\\": "includes/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
